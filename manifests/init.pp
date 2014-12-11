@@ -35,6 +35,8 @@ class rsyslog (
   $service_name           = $rsyslog::params::service_name,
   $service_hasrestart     = $rsyslog::params::service_hasrestart,
   $service_hasstatus      = $rsyslog::params::service_hasstatus,
+  $service_enable         = $rsyslog::params::service_enable,
+  $service_ensure         = $rsyslog::params::service_ensure,
   $client_conf            = $rsyslog::params::client_conf,
   $server_conf            = $rsyslog::params::server_conf,
   $ssl                    = $rsyslog::params::ssl,

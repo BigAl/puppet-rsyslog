@@ -12,8 +12,8 @@
 #
 class rsyslog::service {
   service { $rsyslog::service_name:
-    ensure     => running,
-    enable     => true,
+    ensure     => $rsyslog::service_ensure,
+    enable     => $rsyslog::service_enable,
     hasstatus  => $rsyslog::service_hasstatus,
     hasrestart => $rsyslog::service_hasrestart,
     require    => Class['rsyslog::config'],

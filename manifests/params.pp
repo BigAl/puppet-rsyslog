@@ -13,6 +13,8 @@
 #
 class rsyslog::params {
 
+  $service_enable = true
+  $service_ensure = 'running'
   $max_message_size           = '2k'
   $purge_rsyslog_d            = false
   $extra_modules              = []
